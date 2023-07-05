@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(64, 223, 175), rgb(87, 137, 245), rgb(53, 173, 143));
+}
+
+.container {
+    width: 600px;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: -60px;
+    flex-direction:row;
+    margin-left: 100px;
+    /* backdrop-filter: blur(15px); */
+}
+
+.converter{
+    width: 350px;
+    margin-left: 800px;
+    margin-top: -350px;
+    border:1px solid #F4F4F4;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 18px;
+    padding-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+main {
+    padding: 20px;
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(255, 251, 251);
+}
+
+select {
+    background: #FFFFFF;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    width: 100%;
+    height: 48px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+input {
+    font-size: 18px;
+    background: #FFFFFF;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    display: block;
+    outline: none;
+    padding: 16px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: .9;
+    background: #ba59e7;
+    color: #fff;
+}
+
+button:active {
+    opacity: .7;
+}
+
+.section-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.section-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.value {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.arrow-img {
+    margin: 0 auto;
+    display: block;
+} 
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+    .converter{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+        margin-left: 9px;
+        width: 100vw;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    label {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    select {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    select option {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    header {
+        width: 100%;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+}

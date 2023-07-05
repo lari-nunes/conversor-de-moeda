@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/moeda.png">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div>
+        <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=B327A1&height=120&section=header"/>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>R$ Real brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select id="select-value">
+                    <option>US$ Dólar Americano</option>
+                    <option>€ Euro</option>
+                    <option>₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label>
+                Valor
+                <input id="input-real" placeholder="R$ 10.000,00">
+            </label>
+
+            <button id="button-value">Converter</button>
+        </main>
+    </div>    
+
+        <div class="converter">
+            <section>
+                <div class="section-container">
+                    <img src="./assets/brasil 2.svg" alt="">
+                    <p class="section-text">Real</p>
+                    <p class="value" id="value-real-text">R$ 10.000,00</p>
+                </div>
+
+                <img class="arrow-img" src="./assets/Vector.png" alt="brasil">
+
+                <div class="section-container">
+                    <img src="./assets/estados-unidos (1) 1.svg" id="section-img" alt="eua">
+                    <p class="section-text" id="section-text">Dólar Americano</p>
+                    <p class="value" id="value-dolar-text">US$ 2.000,00</p>
+                </div>
+            </section>
+
+        </div>
+
+    
+
+</body>
+<script src="./script.js"></script>
+</html>
